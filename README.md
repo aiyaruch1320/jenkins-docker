@@ -43,6 +43,21 @@ docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 4. Follow the instructions to complete the Jenkins setup.
 
+## Install Necessary Plugins
+
+1. Open Jenkins in your browser and log in with the credentials set during the setup.
+
+2. Navigate to "Manage Jenkins" > "Manage Plugins" > "Available."
+
+3. Search for and select the following plugins:
+
+- Docker Pipeline
+- Docker
+- Pipeline
+
+4. Click "Download now and install after restart."
+5. Once the plugins are installed, Jenkins will restart automatically.
+
 ## Additional Configuration
 
 ### Jenkins Home Volume
