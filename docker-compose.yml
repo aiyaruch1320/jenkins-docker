@@ -3,6 +3,7 @@ version: '3'
 services:
   jenkins:
     image: jenkins-with-docker
+    build: .
     container_name: jenkins
     ports:
       - "8080:8080"
