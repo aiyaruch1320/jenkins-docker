@@ -10,7 +10,7 @@ pipeline {
             }
             steps {
                 script {
-                    sh 'cat Dockerfile'
+                    sh 'ls'
                     sh 'go version'
                 }
             }
