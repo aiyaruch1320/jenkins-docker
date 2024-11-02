@@ -15,5 +15,17 @@ pipeline {
                 }
             }
         }
+        stage('Check node version') {
+            agent {
+                docker {
+                    image 'node:14.17.6-alpine3.14'
+                }
+            }
+            steps {
+                script {
+                    sh 'node -v'
+                }
+            }
+        }
     }
 }
