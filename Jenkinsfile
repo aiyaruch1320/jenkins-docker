@@ -10,7 +10,6 @@ pipeline {
             }
             steps {
                 script {
-                    sh 'ls'
                     sh 'go version'
                 }
             }
